@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm / VSCode IDE settings
+.idea/
+.vscode/
+
+# Large model checkpoints and datasets (Do NOT push to GitHub)
+pretrained/
+checkpoints/
+data/
+*.pth
+*.ckpt
+*.bin
+
+# Ignore large raw prediction JSONs in outputs, but KEEP charts (.png/.pdf) and tables (.csv)
+outputs/**/*.json
+outputs/**/*.jsonl
+!outputs/**/*.png
+!outputs/**/*.jpg
+!outputs/**/*.pdf
+!outputs/**/*.csv
